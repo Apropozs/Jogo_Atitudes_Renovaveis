@@ -3,8 +3,8 @@ extends Button
 @onready var texture_rect = $TextureRect
 
 # Substitua os caminhos abaixo pelos corretos do seu projeto
-var normal_texture = preload("res://assets/images/Fase1/botaoConfirmar_normal.png")
-var hover_texture = preload("res://assets/images/Fase1/botao_confirmar_hover.png")
+var normal_texture = preload("res://assets/images/Fase1/botao_confirmar_normal1.png")
+var hover_texture = preload("res://assets/images/Fase1/botao_confirmar_hover1.png")
 
 
 func _ready():

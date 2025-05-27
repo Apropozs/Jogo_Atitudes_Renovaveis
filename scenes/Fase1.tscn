@@ -7,8 +7,8 @@
 [ext_resource type="Texture2D" uid="uid://c7mhmtcd0owlv" path="res://assets/images/Fase1/marker.png" id="4_ulkkg"]
 [ext_resource type="Texture2D" uid="uid://bdcku68ydgi3y" path="res://assets/images/Fase1/pointer.png" id="5_nggdj"]
 [ext_resource type="Script" uid="uid://hbfj16uq6s6s" path="res://scripts/Fase1/pointer.gd" id="5_ulkkg"]
-[ext_resource type="Texture2D" uid="uid://cbevoehduure4" path="res://assets/images/Fase1/botaoConfirmar_normal.png" id="8_2fo7l"]
 [ext_resource type="Script" uid="uid://cl20q3vwj27rx" path="res://scripts/Fase1/Confirmar.gd" id="8_opofi"]
+[ext_resource type="Texture2D" uid="uid://brde1cev2vf2s" path="res://assets/images/Fase1/botao_confirmar_normal1.png" id="9_opofi"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_nggdj"]
 size = Vector2(188, 70)
@@ -113,7 +113,7 @@ offset_left = -101.0
 offset_top = -78.0
 offset_right = 487.0
 offset_bottom = 183.0
-texture = ExtResource("8_2fo7l")
+texture = ExtResource("9_opofi")
 expand_mode = 2
 
 [connection signal="pressed" from="Placa1" to="." method="_on_Placa1_pressed"]
