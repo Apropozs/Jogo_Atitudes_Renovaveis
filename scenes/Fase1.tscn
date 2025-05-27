@@ -1,0 +1,120 @@
+[gd_scene load_steps=23 format=3 uid="uid://2f5ke6ymv3y0"]
+
+[ext_resource type="Texture2D" uid="uid://d3svkunxmi33v" path="res://assets/images/Fase1.jpg" id="1"]
+[ext_resource type="Script" uid="uid://3mf88jwswwlk" path="res://scripts/Fase1.gd" id="2"]
+[ext_resource type="Texture2D" uid="uid://bhpub7ouk7o5h" path="res://assets/images/Fase1/bar.png" id="3_j7s8k"]
+[ext_resource type="Script" uid="uid://u1usa3k0l347" path="res://scripts/Fase1/timing_bar.gd" id="3_nggdj"]
+[ext_resource type="Texture2D" uid="uid://c7mhmtcd0owlv" path="res://assets/images/Fase1/marker.png" id="4_ulkkg"]
+[ext_resource type="Texture2D" uid="uid://bdcku68ydgi3y" path="res://assets/images/Fase1/pointer.png" id="5_nggdj"]
+[ext_resource type="Script" uid="uid://hbfj16uq6s6s" path="res://scripts/Fase1/pointer.gd" id="5_ulkkg"]
+[ext_resource type="Texture2D" uid="uid://cbevoehduure4" path="res://assets/images/Fase1/botaoConfirmar_normal.png" id="8_2fo7l"]
+[ext_resource type="Script" uid="uid://cl20q3vwj27rx" path="res://scripts/Fase1/Confirmar.gd" id="8_opofi"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_nggdj"]
+size = Vector2(188, 70)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_2fo7l"]
+size = Vector2(18, 78)
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_opofi"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_847xx"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_bfo68"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_ndch1"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_nk8g7"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_48mec"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_6ny51"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_1duop"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_2oe0w"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_326es"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_w1tbj"]
+
+[node name="Fase1" type="Control"]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+script = ExtResource("2")
+
+[node name="bd" type="TextureRect" parent="."]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+texture = ExtResource("1")
+
+[node name="Placa1" type="Button" parent="."]
+layout_mode = 0
+offset_left = 836.0
+offset_top = 816.0
+offset_right = 991.0
+offset_bottom = 928.0
+
+[node name="timingBar" type="Node2D" parent="."]
+script = ExtResource("3_nggdj")
+
+[node name="Barra" type="Sprite2D" parent="timingBar"]
+position = Vector2(980, 402)
+scale = Vector2(0.369531, 0.266898)
+texture = ExtResource("3_j7s8k")
+
+[node name="Marker" type="Area2D" parent="timingBar"]
+
+[node name="Marcacao" type="Sprite2D" parent="timingBar/Marker"]
+position = Vector2(981, 403)
+scale = Vector2(0.242448, 0.272917)
+texture = ExtResource("4_ulkkg")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="timingBar/Marker"]
+position = Vector2(995, 395)
+shape = SubResource("RectangleShape2D_nggdj")
+
+[node name="Pointer" type="Area2D" parent="timingBar"]
+script = ExtResource("5_ulkkg")
+
+[node name="Ponteiro" type="Sprite2D" parent="timingBar/Pointer"]
+position = Vector2(994, 396)
+scale = Vector2(0.10905, 0.09375)
+texture = ExtResource("5_nggdj")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="timingBar/Pointer"]
+position = Vector2(995, 395)
+shape = SubResource("RectangleShape2D_2fo7l")
+
+[node name="Confirmar" type="Button" parent="timingBar"]
+offset_left = 805.0
+offset_top = 509.0
+offset_right = 1185.0
+offset_bottom = 617.0
+theme_override_styles/focus = SubResource("StyleBoxEmpty_opofi")
+theme_override_styles/disabled_mirrored = SubResource("StyleBoxEmpty_847xx")
+theme_override_styles/disabled = SubResource("StyleBoxEmpty_bfo68")
+theme_override_styles/hover_pressed_mirrored = SubResource("StyleBoxEmpty_ndch1")
+theme_override_styles/hover_pressed = SubResource("StyleBoxEmpty_nk8g7")
+theme_override_styles/hover_mirrored = SubResource("StyleBoxEmpty_48mec")
+theme_override_styles/hover = SubResource("StyleBoxEmpty_6ny51")
+theme_override_styles/pressed_mirrored = SubResource("StyleBoxEmpty_1duop")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_2oe0w")
+theme_override_styles/normal_mirrored = SubResource("StyleBoxEmpty_326es")
+theme_override_styles/normal = SubResource("StyleBoxEmpty_w1tbj")
+script = ExtResource("8_opofi")
+
+[node name="TextureRect" type="TextureRect" parent="timingBar/Confirmar"]
+layout_mode = 0
+offset_left = -101.0
+offset_top = -78.0
+offset_right = 487.0
+offset_bottom = 183.0
+texture = ExtResource("8_2fo7l")
+expand_mode = 2
+
+[connection signal="pressed" from="Placa1" to="." method="_on_Placa1_pressed"]
+[connection signal="pressed" from="timingBar/Confirmar" to="timingBar" method="_on_Confirmar_pressed"]

@@ -1,0 +1,79 @@
+[gd_scene load_steps=16 format=3 uid="uid://dk6hy8ltxyk74"]
+
+[ext_resource type="Texture2D" uid="uid://c587266sptrtv" path="res://assets/images/MenuFases.jpg" id="1"]
+[ext_resource type="Texture2D" uid="uid://cehw2skx81tn1" path="res://assets/images/menuFases/botaoVoltar_normal.png" id="3_81y0b"]
+[ext_resource type="Script" uid="uid://dlwgcrg8mnbh0" path="res://scripts/menuFases/voltar.gd" id="3_qpyak"]
+[ext_resource type="Script" uid="uid://ts8252dr5v60" path="res://scripts/MenuFases.gd" id="4"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_81y0b"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_qpyak"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_iwssl"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_rja56"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_rghue"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_6t05r"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_vkjye"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_d4p1i"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_1iidy"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_qfhey"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_te5la"]
+
+[node name="MenuFases" type="Control"]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+script = ExtResource("4")
+
+[node name="TextureRect" type="TextureRect" parent="."]
+layout_mode = 0
+offset_right = 1920.0
+offset_bottom = 1080.0
+texture = ExtResource("1")
+
+[node name="Voltar" type="Button" parent="."]
+layout_mode = 0
+offset_left = 9.0
+offset_top = 5.0
+offset_right = 243.0
+offset_bottom = 97.0
+theme_override_styles/focus = SubResource("StyleBoxEmpty_81y0b")
+theme_override_styles/disabled_mirrored = SubResource("StyleBoxEmpty_qpyak")
+theme_override_styles/disabled = SubResource("StyleBoxEmpty_iwssl")
+theme_override_styles/hover_pressed_mirrored = SubResource("StyleBoxEmpty_rja56")
+theme_override_styles/hover_pressed = SubResource("StyleBoxEmpty_rghue")
+theme_override_styles/hover_mirrored = SubResource("StyleBoxEmpty_6t05r")
+theme_override_styles/hover = SubResource("StyleBoxEmpty_vkjye")
+theme_override_styles/pressed_mirrored = SubResource("StyleBoxEmpty_d4p1i")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_1iidy")
+theme_override_styles/normal_mirrored = SubResource("StyleBoxEmpty_qfhey")
+theme_override_styles/normal = SubResource("StyleBoxEmpty_te5la")
+script = ExtResource("3_qpyak")
+
+[node name="TextureRect" type="TextureRect" parent="Voltar"]
+layout_mode = 0
+offset_left = -67.0
+offset_top = -59.0
+offset_right = 301.0
+offset_bottom = 151.0
+texture = ExtResource("3_81y0b")
+expand_mode = 2
+
+[node name="Fase1" type="Button" parent="."]
+layout_mode = 0
+offset_left = 135.0
+offset_top = 493.0
+offset_right = 746.0
+offset_bottom = 778.0
+
+[connection signal="pressed" from="Voltar" to="." method="_on_voltar_pressed"]
+[connection signal="pressed" from="Fase1" to="." method="_on_Fase1_pressed"]

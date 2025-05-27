@@ -1,0 +1,199 @@
+[gd_scene load_steps=46 format=3 uid="uid://c7kjhv5j14wwo"]
+
+[ext_resource type="Texture2D" uid="uid://e78smkdwb4y6" path="res://assets/images/informeNome/telaInformeNome.jpg" id="1_48m6r"]
+[ext_resource type="Script" uid="uid://b7qf3cyht1f71" path="res://scripts/InformeNome.gd" id="1_xbxhw"]
+[ext_resource type="Texture2D" uid="uid://bg3c5xri3d44e" path="res://assets/images/informeNome/botaoVoltar_normal.png" id="2_5ly8w"]
+[ext_resource type="Script" uid="uid://bfwnanh017hke" path="res://scripts/informeNome/voltar.gd" id="3_f1kyo"]
+[ext_resource type="Texture2D" uid="uid://cujqc7yinu2ta" path="res://assets/images/informeNome/botaoConfig_normal.png" id="3_u4qdd"]
+[ext_resource type="Texture2D" uid="uid://dwkr254r320sa" path="res://assets/images/informeNome/botaoConfirmar_normal.png" id="4_3eao8"]
+[ext_resource type="Script" uid="uid://dbxrgbmw470fy" path="res://scripts/informeNome/config.gd" id="5_nbemx"]
+[ext_resource type="Script" uid="uid://8uhhhdu6odv6" path="res://scripts/informeNome/confirmar.gd" id="7_s4m03"]
+[ext_resource type="FontFile" uid="uid://dygl1s2gbncu2" path="res://assets/fonts/VCR_OSD_MONO.ttf" id="9_oagu6"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_xbxhw"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_f1kyo"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_nbemx"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_s4m03"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_oagu6"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_5wp1e"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_dkefj"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_7106x"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_8u8ee"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_vuu4t"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_46tpt"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_4tot4"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_gbedx"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_vlnh6"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_3y7ud"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_nf512"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_uoowr"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_k4ejd"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_pdgnr"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_wndc7"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_eamab"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_37fte"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_yxe7f"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_3fai7"]
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_dlj04"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_wd3si"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_pf3xd"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_8b1n2"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_ffgqa"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_7knff"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_hoxbi"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_4pqn5"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_ar3w8"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_dlj04"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_gcter"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_ngaqf"]
+
+[node name="InformeNome" type="Control"]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+script = ExtResource("1_xbxhw")
+
+[node name="TextureRect" type="TextureRect" parent="."]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+texture = ExtResource("1_48m6r")
+
+[node name="Voltar" type="Button" parent="."]
+layout_mode = 0
+offset_left = 9.0
+offset_top = 6.0
+offset_right = 262.0
+offset_bottom = 107.0
+theme_override_styles/focus = SubResource("StyleBoxEmpty_xbxhw")
+theme_override_styles/disabled_mirrored = SubResource("StyleBoxEmpty_f1kyo")
+theme_override_styles/disabled = SubResource("StyleBoxEmpty_nbemx")
+theme_override_styles/hover_pressed_mirrored = SubResource("StyleBoxEmpty_s4m03")
+theme_override_styles/hover_pressed = SubResource("StyleBoxEmpty_oagu6")
+theme_override_styles/hover_mirrored = SubResource("StyleBoxEmpty_5wp1e")
+theme_override_styles/hover = SubResource("StyleBoxEmpty_dkefj")
+theme_override_styles/pressed_mirrored = SubResource("StyleBoxEmpty_7106x")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_8u8ee")
+theme_override_styles/normal_mirrored = SubResource("StyleBoxEmpty_vuu4t")
+theme_override_styles/normal = SubResource("StyleBoxEmpty_46tpt")
+script = ExtResource("3_f1kyo")
+
+[node name="TextureRect" type="TextureRect" parent="Voltar"]
+layout_mode = 0
+offset_left = -71.0
+offset_top = -65.0
+offset_right = 318.0
+offset_bottom = 160.0
+texture = ExtResource("2_5ly8w")
+expand_mode = 2
+
+[node name="Config" type="Button" parent="."]
+layout_mode = 0
+offset_left = 1657.0
+offset_top = 6.0
+offset_right = 1911.0
+offset_bottom = 105.0
+theme_override_styles/focus = SubResource("StyleBoxEmpty_4tot4")
+theme_override_styles/disabled_mirrored = SubResource("StyleBoxEmpty_gbedx")
+theme_override_styles/disabled = SubResource("StyleBoxEmpty_vlnh6")
+theme_override_styles/hover_pressed_mirrored = SubResource("StyleBoxEmpty_3y7ud")
+theme_override_styles/hover_pressed = SubResource("StyleBoxEmpty_nf512")
+theme_override_styles/hover_mirrored = SubResource("StyleBoxEmpty_uoowr")
+theme_override_styles/hover = SubResource("StyleBoxEmpty_k4ejd")
+theme_override_styles/pressed_mirrored = SubResource("StyleBoxEmpty_pdgnr")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_wndc7")
+theme_override_styles/normal_mirrored = SubResource("StyleBoxEmpty_eamab")
+theme_override_styles/normal = SubResource("StyleBoxEmpty_37fte")
+script = ExtResource("5_nbemx")
+
+[node name="TextureRect" type="TextureRect" parent="Config"]
+layout_mode = 0
+offset_left = -68.0
+offset_top = -65.0
+offset_right = 323.0
+offset_bottom = 160.0
+texture = ExtResource("3_u4qdd")
+expand_mode = 2
+
+[node name="Confirmar" type="Button" parent="."]
+layout_mode = 0
+offset_left = 741.0
+offset_top = 864.0
+offset_right = 1181.0
+offset_bottom = 1031.0
+theme_override_styles/focus = SubResource("StyleBoxEmpty_yxe7f")
+theme_override_styles/disabled_mirrored = SubResource("StyleBoxEmpty_3fai7")
+theme_override_styles/disabled = SubResource("StyleBoxTexture_dlj04")
+theme_override_styles/hover_pressed_mirrored = SubResource("StyleBoxEmpty_wd3si")
+theme_override_styles/hover_pressed = SubResource("StyleBoxEmpty_pf3xd")
+theme_override_styles/hover_mirrored = SubResource("StyleBoxEmpty_8b1n2")
+theme_override_styles/hover = SubResource("StyleBoxEmpty_ffgqa")
+theme_override_styles/pressed_mirrored = SubResource("StyleBoxEmpty_7knff")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_hoxbi")
+theme_override_styles/normal_mirrored = SubResource("StyleBoxEmpty_4pqn5")
+theme_override_styles/normal = SubResource("StyleBoxEmpty_ar3w8")
+script = ExtResource("7_s4m03")
+
+[node name="TextureRect" type="TextureRect" parent="Confirmar"]
+layout_mode = 0
+offset_left = -122.0
+offset_top = -109.0
+offset_right = 563.0
+offset_bottom = 269.0
+texture = ExtResource("4_3eao8")
+expand_mode = 2
+
+[node name="InformarNome" type="LineEdit" parent="."]
+layout_mode = 0
+offset_left = 521.0
+offset_top = 405.0
+offset_right = 1398.0
+offset_bottom = 534.0
+theme_override_colors/caret_color = Color(0, 0, 0, 1)
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("9_oagu6")
+theme_override_font_sizes/font_size = 78
+theme_override_styles/focus = SubResource("StyleBoxEmpty_dlj04")
+theme_override_styles/read_only = SubResource("StyleBoxEmpty_gcter")
+theme_override_styles/normal = SubResource("StyleBoxEmpty_ngaqf")
+alignment = 1
+
+[connection signal="pressed" from="Voltar" to="." method="_on_Voltar_pressed"]
+[connection signal="pressed" from="Config" to="." method="_on_config_pressed"]
+[connection signal="pressed" from="Confirmar" to="." method="_on_confirmar_pressed"]
