@@ -1,14 +1,26 @@
-[gd_scene load_steps=23 format=3 uid="uid://2f5ke6ymv3y0"]
+[gd_scene load_steps=79 format=3 uid="uid://2f5ke6ymv3y0"]
 
-[ext_resource type="Texture2D" uid="uid://d3svkunxmi33v" path="res://assets/images/Fase1.jpg" id="1"]
 [ext_resource type="Script" uid="uid://3mf88jwswwlk" path="res://scripts/Fase1.gd" id="2"]
+[ext_resource type="Texture2D" uid="uid://sma1e00c4khk" path="res://assets/images/Fase1/fase_1_BD.jpg" id="2_6ny51"]
+[ext_resource type="Texture2D" uid="uid://csqloby3ctdx7" path="res://assets/images/Fase1/seta_fase1.png" id="3_847xx"]
 [ext_resource type="Texture2D" uid="uid://bhpub7ouk7o5h" path="res://assets/images/Fase1/bar.png" id="3_j7s8k"]
 [ext_resource type="Script" uid="uid://u1usa3k0l347" path="res://scripts/Fase1/timing_bar.gd" id="3_nggdj"]
+[ext_resource type="Script" uid="uid://xpq4xln1t62n" path="res://scripts/Fase1/placa_1.gd" id="3_nk8g7"]
+[ext_resource type="Script" uid="uid://nril65jqmyr4" path="res://scripts/Fase1/seta_1.gd" id="4_bfo68"]
 [ext_resource type="Texture2D" uid="uid://c7mhmtcd0owlv" path="res://assets/images/Fase1/marker.png" id="4_ulkkg"]
 [ext_resource type="Texture2D" uid="uid://bdcku68ydgi3y" path="res://assets/images/Fase1/pointer.png" id="5_nggdj"]
 [ext_resource type="Script" uid="uid://hbfj16uq6s6s" path="res://scripts/Fase1/pointer.gd" id="5_ulkkg"]
+[ext_resource type="Texture2D" uid="uid://c03o3o8h3swwk" path="res://assets/images/Fase1/placa_solar.png" id="6_1duop"]
 [ext_resource type="Script" uid="uid://cl20q3vwj27rx" path="res://scripts/Fase1/Confirmar.gd" id="8_opofi"]
 [ext_resource type="Texture2D" uid="uid://brde1cev2vf2s" path="res://assets/images/Fase1/botao_confirmar_normal1.png" id="9_opofi"]
+[ext_resource type="Texture2D" uid="uid://cj0ecn6xwr42i" path="res://assets/images/Fase1/barra_vida.png" id="12_ndch1"]
+[ext_resource type="Texture2D" uid="uid://0mag30ctdxs0" path="res://assets/images/Fase1/vidas.png" id="14_48mec"]
+[ext_resource type="Script" uid="uid://c7sbx3ukqni77" path="res://scripts/Fase1/placa_2.gd" id="16_1duop"]
+[ext_resource type="Script" uid="uid://dlswv6f8jsd1v" path="res://scripts/Fase1/seta_2.gd" id="17_2oe0w"]
+[ext_resource type="Script" uid="uid://d0nlqej2yggxx" path="res://scripts/Fase1/placa_3.gd" id="18_326es"]
+[ext_resource type="Script" uid="uid://dlst3a4nfkd2u" path="res://scripts/Fase1/seta_3.gd" id="19_w1tbj"]
+[ext_resource type="Script" uid="uid://70mbfrty4y70" path="res://scripts/Fase1/placa_4.gd" id="20_pwxe2"]
+[ext_resource type="Script" uid="uid://f4wt1rw7ax15" path="res://scripts/Fase1/seta_4.gd" id="21_lgwl7"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_nggdj"]
 size = Vector2(188, 70)
@@ -38,6 +50,94 @@ size = Vector2(18, 78)
 
 [sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_w1tbj"]
 
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_pwxe2"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_lgwl7"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_7ygx7"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_3us6f"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_g0n7r"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_l8q4j"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_ixume"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_pumon"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_bgcsc"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_ctxon"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_ninsh"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_ar0wc"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_geqgc"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_ay6bi"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_hm5dp"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_d8w7s"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_u8l5i"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_fmbq4"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_bkrjd"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_50t2c"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_8j1cb"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_ia7qx"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_rnaom"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_8hhyi"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_3yfv3"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_lrl5p"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_uf5y0"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_x2m27"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_1f754"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_ihbkp"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_qvha5"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_52x0l"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_g0ron"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_o6ewe"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_b0iat"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_xvj74"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_sdfoc"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_ntq3m"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_p7d8f"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_vix8l"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_be3mx"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_dofdu"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_oliep"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_2i7m6"]
+
 [node name="Fase1" type="Control"]
 layout_mode = 3
 anchors_preset = 0
@@ -49,14 +149,7 @@ script = ExtResource("2")
 layout_mode = 0
 offset_right = 40.0
 offset_bottom = 40.0
-texture = ExtResource("1")
-
-[node name="Placa1" type="Button" parent="."]
-layout_mode = 0
-offset_left = 836.0
-offset_top = 816.0
-offset_right = 991.0
-offset_bottom = 928.0
+texture = ExtResource("2_6ny51")
 
 [node name="timingBar" type="Node2D" parent="."]
 script = ExtResource("3_nggdj")
@@ -116,5 +209,196 @@ offset_bottom = 183.0
 texture = ExtResource("9_opofi")
 expand_mode = 2
 
-[connection signal="pressed" from="Placa1" to="." method="_on_Placa1_pressed"]
+[node name="barraVida" type="TextureRect" parent="."]
+layout_mode = 0
+offset_left = -312.0
+offset_top = 661.0
+offset_right = 493.0
+offset_bottom = 1080.0
+texture = ExtResource("12_ndch1")
+expand_mode = 2
+
+[node name="coracao1" type="TextureRect" parent="."]
+layout_mode = 0
+offset_left = 144.0
+offset_top = 682.0
+offset_right = 352.0
+offset_bottom = 799.0
+texture = ExtResource("14_48mec")
+expand_mode = 2
+
+[node name="coracao2" type="TextureRect" parent="."]
+layout_mode = 0
+offset_left = 144.0
+offset_top = 774.0
+offset_right = 353.0
+offset_bottom = 890.0
+texture = ExtResource("14_48mec")
+expand_mode = 2
+
+[node name="coracao3" type="TextureRect" parent="."]
+layout_mode = 0
+offset_left = 146.0
+offset_top = 865.0
+offset_right = 353.0
+offset_bottom = 983.0
+texture = ExtResource("14_48mec")
+expand_mode = 2
+
+[node name="coracao4" type="TextureRect" parent="."]
+layout_mode = 0
+offset_left = 142.0
+offset_top = 958.0
+offset_right = 359.0
+offset_bottom = 1074.0
+texture = ExtResource("14_48mec")
+expand_mode = 2
+
+[node name="Placa1" type="Button" parent="."]
+layout_mode = 0
+offset_left = 916.0
+offset_top = 818.0
+offset_right = 1071.0
+offset_bottom = 930.0
+theme_override_styles/focus = SubResource("StyleBoxEmpty_pwxe2")
+theme_override_styles/disabled_mirrored = SubResource("StyleBoxEmpty_lgwl7")
+theme_override_styles/disabled = SubResource("StyleBoxEmpty_7ygx7")
+theme_override_styles/hover_pressed_mirrored = SubResource("StyleBoxEmpty_3us6f")
+theme_override_styles/hover_pressed = SubResource("StyleBoxEmpty_g0n7r")
+theme_override_styles/hover_mirrored = SubResource("StyleBoxEmpty_l8q4j")
+theme_override_styles/hover = SubResource("StyleBoxEmpty_ixume")
+theme_override_styles/pressed_mirrored = SubResource("StyleBoxEmpty_pumon")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_bgcsc")
+theme_override_styles/normal_mirrored = SubResource("StyleBoxEmpty_ctxon")
+theme_override_styles/normal = SubResource("StyleBoxEmpty_ninsh")
+script = ExtResource("3_nk8g7")
+
+[node name="seta1" type="Sprite2D" parent="Placa1"]
+position = Vector2(74, -37)
+scale = Vector2(0.207, 0.187)
+texture = ExtResource("3_847xx")
+script = ExtResource("4_bfo68")
+
+[node name="placa_texture" type="TextureRect" parent="Placa1"]
+visible = false
+layout_mode = 0
+offset_left = -292.0
+offset_top = -157.0
+offset_right = 455.0
+offset_bottom = 287.0
+mouse_filter = 2
+texture = ExtResource("6_1duop")
+expand_mode = 2
+
+[node name="Placa2" type="Button" parent="."]
+layout_mode = 0
+offset_left = 917.0
+offset_top = 955.0
+offset_right = 1086.0
+offset_bottom = 1056.0
+theme_override_styles/focus = SubResource("StyleBoxEmpty_ar0wc")
+theme_override_styles/disabled_mirrored = SubResource("StyleBoxEmpty_geqgc")
+theme_override_styles/disabled = SubResource("StyleBoxEmpty_ay6bi")
+theme_override_styles/hover_pressed_mirrored = SubResource("StyleBoxEmpty_hm5dp")
+theme_override_styles/hover_pressed = SubResource("StyleBoxEmpty_d8w7s")
+theme_override_styles/hover_mirrored = SubResource("StyleBoxEmpty_u8l5i")
+theme_override_styles/hover = SubResource("StyleBoxEmpty_fmbq4")
+theme_override_styles/pressed_mirrored = SubResource("StyleBoxEmpty_bkrjd")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_50t2c")
+theme_override_styles/normal_mirrored = SubResource("StyleBoxEmpty_8j1cb")
+theme_override_styles/normal = SubResource("StyleBoxEmpty_ia7qx")
+script = ExtResource("16_1duop")
+
+[node name="seta2" type="Sprite2D" parent="Placa2"]
+position = Vector2(75, 2.99998)
+scale = Vector2(0.2075, 0.182)
+texture = ExtResource("3_847xx")
+script = ExtResource("17_2oe0w")
+
+[node name="placa_texture" type="TextureRect" parent="Placa2"]
+visible = false
+layout_mode = 0
+offset_left = -281.0
+offset_top = -161.0
+offset_right = 449.0
+offset_bottom = 262.0
+mouse_filter = 2
+texture = ExtResource("6_1duop")
+expand_mode = 2
+
+[node name="Placa3" type="Button" parent="."]
+layout_mode = 0
+offset_left = 610.0
+offset_top = 826.0
+offset_right = 815.0
+offset_bottom = 931.0
+theme_override_styles/focus = SubResource("StyleBoxEmpty_rnaom")
+theme_override_styles/disabled_mirrored = SubResource("StyleBoxEmpty_8hhyi")
+theme_override_styles/disabled = SubResource("StyleBoxEmpty_3yfv3")
+theme_override_styles/hover_pressed_mirrored = SubResource("StyleBoxEmpty_lrl5p")
+theme_override_styles/hover_pressed = SubResource("StyleBoxEmpty_uf5y0")
+theme_override_styles/hover_mirrored = SubResource("StyleBoxEmpty_x2m27")
+theme_override_styles/hover = SubResource("StyleBoxEmpty_1f754")
+theme_override_styles/pressed_mirrored = SubResource("StyleBoxEmpty_ihbkp")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_qvha5")
+theme_override_styles/normal_mirrored = SubResource("StyleBoxEmpty_52x0l")
+theme_override_styles/normal = SubResource("StyleBoxEmpty_g0ron")
+script = ExtResource("18_326es")
+
+[node name="seta3" type="Sprite2D" parent="Placa3"]
+position = Vector2(119, -39)
+scale = Vector2(0.1975, 0.185437)
+texture = ExtResource("3_847xx")
+script = ExtResource("19_w1tbj")
+
+[node name="placa_texture" type="TextureRect" parent="Placa3"]
+visible = false
+layout_mode = 0
+offset_left = -263.0
+offset_top = -151.0
+offset_right = 491.0
+offset_bottom = 272.0
+mouse_filter = 2
+texture = ExtResource("6_1duop")
+expand_mode = 2
+
+[node name="Placa4" type="Button" parent="."]
+layout_mode = 0
+offset_left = 635.0
+offset_top = 961.0
+offset_right = 830.0
+offset_bottom = 1057.0
+theme_override_styles/focus = SubResource("StyleBoxEmpty_o6ewe")
+theme_override_styles/disabled_mirrored = SubResource("StyleBoxEmpty_b0iat")
+theme_override_styles/disabled = SubResource("StyleBoxEmpty_xvj74")
+theme_override_styles/hover_pressed_mirrored = SubResource("StyleBoxEmpty_sdfoc")
+theme_override_styles/hover_pressed = SubResource("StyleBoxEmpty_ntq3m")
+theme_override_styles/hover_mirrored = SubResource("StyleBoxEmpty_p7d8f")
+theme_override_styles/hover = SubResource("StyleBoxEmpty_vix8l")
+theme_override_styles/pressed_mirrored = SubResource("StyleBoxEmpty_be3mx")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_dofdu")
+theme_override_styles/normal_mirrored = SubResource("StyleBoxEmpty_oliep")
+theme_override_styles/normal = SubResource("StyleBoxEmpty_2i7m6")
+script = ExtResource("20_pwxe2")
+
+[node name="seta4" type="Sprite2D" parent="Placa4"]
+position = Vector2(93, 3.99999)
+scale = Vector2(0.201, 0.183)
+texture = ExtResource("3_847xx")
+script = ExtResource("21_lgwl7")
+
+[node name="placa_texture" type="TextureRect" parent="Placa4"]
+visible = false
+offset_left = -266.0
+offset_top = -168.0
+offset_right = 475.0
+offset_bottom = 256.0
+mouse_filter = 2
+texture = ExtResource("6_1duop")
+expand_mode = 2
+
 [connection signal="pressed" from="timingBar/Confirmar" to="timingBar" method="_on_Confirmar_pressed"]
+[connection signal="pressed" from="Placa1" to="." method="_on_Placa1_pressed"]
+[connection signal="pressed" from="Placa2" to="." method="_on_Placa2_pressed"]
+[connection signal="pressed" from="Placa3" to="." method="_on_Placa3_pressed"]
+[connection signal="pressed" from="Placa4" to="." method="_on_Placa4_pressed"]
